@@ -1,0 +1,98 @@
+/* GENERAL */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+li:not(li:last-of-type){
+  margin-right: 15px;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+/* UTILITIES */
+
+.d-flex{
+  display: flex;
+}
+
+.btn{
+  border-radius:25px;
+  padding:15px 20px;
+}
+
+.box{
+  border-radius:25px;
+  width:100%;
+  text-align: center;
+  padding:25px;
+  color:rgb(96,109,126	);
+  line-height: 30px;
+}
+
+.box h3{
+  color:rgb(74,131,249	);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+/* HEADER */
+
+header{
+  height:75px;
+  width: 100%;
+  background-color: rgb(74,131,249);
+  justify-content: space-between;
+  padding:20px;
+}
+
+header img.logo{
+  width: 76px;
+  height: auto;;
+}
+
+header nav i.fa-bars{
+  display:inline-block;
+  color: white;
+  font-size: 2rem;
+}
+
+ul.wide-menu{
+  font-size: 0.8;
+  display: none;
+}
+
+/* MAIN */
+
+.lightblue{
+  background-color: rgb(192,220,254);
+}
+
+.blue{
+  background-color: rgb(74,131,249);
+}
+.purple{
+  background-color: rgb(148,144,224);
+}
+
+.demo-services{
+  flex-direction: column;
+  background-color: white;
+  padding:50px 30px 80px;
+}
+
+
+
