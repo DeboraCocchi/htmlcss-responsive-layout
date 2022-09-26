@@ -1,9 +1,8 @@
 @media screen and (min-width:768px){
-  .demo-services{
-    flex-direction: column;
-  }
+
   .demo-services .row{
     justify-content: space-between;
+    flex-direction: row;
   }
 
   .demo-services .top.row .box:first-child{
@@ -31,17 +30,49 @@
   }
 
   /* testimonials */
+
   .testimonials .box{
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: flex-start
   }
 
   .testimonials .box .testimonial-image{
     width:30%;
-    margin-right:30px;
+    margin:0 30px 0 0;
   }
 
   .testimonials .box .testimonial-text{
     width:60%;
+    text-align: left;
+    justify-content: center;
   }
+
+  /* benefits */
+  section.benefits .advantages.d-flex{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  section.benefits .box{
+    width:48%;
+  }
+
+  /* about-us */
+
+  section.about-us{
+    flex-direction: row;
+  }
+
+  .about-us .col:first-child{
+    width:60%;
+    margin-right: 20px;
+  }
+
+  .about-us .col:last-child{
+    width:40%;
+    padding:10px 0px 0px 20px;
+  }
+
+  
 }
