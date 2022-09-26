@@ -19,7 +19,7 @@ li:not(li:last-of-type){
   margin-right: 15px;
 }
 
-a{
+a:not(footer a){
   text-decoration: none;
   color:white;
 }
@@ -32,11 +32,11 @@ img{
 
 .d-flex{
   display: flex;
-  flex-wrap: wrap;
 }
 
 .btn{
   border-radius:25px;
+  height:40px;
   padding:10px 50px;
   display: inline-block;
   margin:1rem 0;
@@ -110,12 +110,9 @@ ul.wide-menu{
 /* MAIN */
 
 .demo-services{
-  flex-direction: column;
   background-color: white;
   padding:50px 30px 80px;
 }
-
-
 
 #first-box{
   padding-bottom:0;
@@ -129,7 +126,7 @@ ul.wide-menu{
 
 .purple-stripe{
   background-color: rgb(148,144,224);
-  width:100vw;
+  width:100%;
   padding:30px 20px;
   color:white;
   justify-content: flex-end;
@@ -149,12 +146,65 @@ ul.wide-menu{
   border-radius: 50%;
 }
 
+.testimonials{
+  padding:30px 20px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.testimonials h2{
+  color: rgb(148,144,224);
+  font-weight: bold;
+  font-size:2rem;
+}
+
+.testimonials .box i{
+  font-size:1.5rem;
+}
+
+.testimonial-image>div{
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  background-color: red;
+  text-align: center;
+  padding-top:80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonials .testimonial-image div{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.testimonials .testimonial-image:first-child > div{
+  background-image: url('../img/testimonial1.jpg');
+}
+
+.testimonials .testimonial-image:nth-of-type(2) > div{
+  background-image: url('../img/testimonial2.jpg');
+}
+
+.testimonials .testimonial-image:nth-of-type(3){
+  background-image: url('../img/testimonial3.jpg');
+}
+
+.testimonials .testimonial-name{
+  text-transform: uppercase;
+}
 
 
 
 
 
 
+
+
+/* ABOUT US */
 
 
 /* FOOTER */

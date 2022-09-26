@@ -1,0 +1,47 @@
+@media screen and (min-width:768px){
+  .demo-services{
+    flex-direction: column;
+  }
+  .demo-services .row{
+    justify-content: space-between;
+  }
+
+  .demo-services .top.row .box:first-child{
+    width:65%;
+    flex-direction: column;
+  }
+
+  .demo-services .top.row .box:first-child img{
+    width:65%;
+
+  }
+
+  .demo-services .top.row .box:last-child{
+    width:31%;
+  }
+
+  .demo-services .bottom.row .box{
+    width:31%;
+  }
+
+  /* strategic planning - purple */
+
+  .strategic{
+    flex-direction: column;
+  }
+
+  /* testimonials */
+  .testimonials .box{
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .testimonials .box .testimonial-image{
+    width:30%;
+    margin-right:30px;
+  }
+
+  .testimonials .box .testimonial-text{
+    width:60%;
+  }
+}
