@@ -13,17 +13,20 @@
   <title>Sito-logo-responsive</title>
 </head>
 <body>
+
   <header class="d-flex">
     <img class="logo" src="assets/img/logo.png" alt="logo">
-    <nav>
-    <i class="fa-solid fa-bars"></i>
-    <ul class="wide-menu d-flex">
-      <li><a href="#">Planning</a></li>
-      <li><a href="#">Testimonials</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">About us</a></li>
-      <li class="btn white"><a href="#">Get Started</a></li>
-    </ul>
+    <div class="hamburger-menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <nav class="d-flex">
+      <ul class="wide-menu">
+        <li><a href="#">Planning</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About us</a></li>
+        <li class="btn white"><a href="#">Get Started</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -35,8 +38,10 @@
           <h3>Get a demo application</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla aperiam optio sit reiciendis? Ut maiores facere quisquam distinctio quia non qui.</p>
           <span class="blue btn">
-            <i class="fa-brands fa-apple"></i>
-            &nbsp; App Store
+            <a href="#">
+              <i class="fa-brands fa-apple"></i>
+              &nbsp; App Store
+            </a>
           </span>
           <img id="phone-img" src="assets/img/phone.png" alt="phone">
         </div>
@@ -99,7 +104,7 @@
           <h4>App Development</h4>
           <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque vitae pariatur labore fuga et maxime maiores nam praesentium provident adipisci.</em></p>
           <div class="purple arrow">
-            <i class="fa-solid fa-arrow-down-long"></i>
+            <a href="#"><i class="fa-solid fa-arrow-down-long"></i></a>
           </div>
         </div>
       </div>
@@ -107,9 +112,7 @@
     </section>
 
 
-
-
-    <!-- TESTIMONIALS PEOPLE CARDS-->
+<!-- TESTIMONIALS PEOPLE CARDS-->
 
     <section class="testimonials">
       <h5>TESTIMONIALS</h5>
@@ -130,7 +133,7 @@
         </div>
         <div class="testimonial-text d-flex">
           <span><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dicta excepturi, ad assumenda enim commodi! <i class="fa-solid fa-quote-right"></i></span>
-          <div class="testimonial-name">Mario Rossi</div>
+          <div class="testimonial-name">Clara Bianchi</div>
         </div>
       </div>
 
@@ -141,7 +144,7 @@
           
           <span><i class="fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dicta excepturi, ad assumenda enim commodi! <i class="fa-solid fa-quote-right"></i></span>
           
-          <div class="testimonial-name">Mario Rossi</div>
+          <div class="testimonial-name">Sergio Neri</div>
         </div>
       </div>
 
@@ -149,7 +152,7 @@
     </section>
 
 
-    <!-- BENEFITS : PURPLE SECTION WITH NUMBERED BOXES -->
+<!-- BENEFITS : PURPLE SECTION WITH NUMBERED BOXES -->
 
     <section class="benefits purple-stripe">
       <h2>Benefits of working with us</h2>
@@ -201,7 +204,7 @@
 
     </section>
 
-    <!-- ABOUT-US -->
+<!-- ABOUT-US -->
 
     <section class="about-us d-flex">
       <div class="col">
@@ -219,12 +222,14 @@
         </div>
         
         <h3>I help people Lorem, ipsum dolor sit amet </h3>
-        <span class="purple btn">Find me on LinkedIn</span>
+        <span class="purple btn"><i class="fa-brands fa-linkedin"></i>&nbsp; Find me on LinkedIn</span>
 
       </div>
 
 
     </section>
+
+<!-- GET STARTED -->
 
     <section class="get-started purple">
       <h4>GET STARTED</h4>
@@ -238,6 +243,7 @@
 
   </main>
 
+<!-- FOOTER -->
 
   <footer>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deserunt enim vel perferendis qui iure!</p>
@@ -246,5 +252,6 @@
     <p><a href="#">Secondo Link del footer</a></p>
 
   </footer>
+
 </body>
 </html>

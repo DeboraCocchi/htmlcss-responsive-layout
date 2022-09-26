@@ -1,3 +1,5 @@
+/* TABLET */
+
 @media screen and (min-width:768px){
 
   .demo-services .row{
@@ -12,7 +14,6 @@
 
   .demo-services .top.row .box:first-child img{
     width:65%;
-
   }
 
   .demo-services .top.row .box:last-child{
@@ -73,6 +74,56 @@
     width:40%;
     padding:10px 0px 0px 20px;
   }
-
   
+}
+
+/* DESKTOP */
+
+@media screen and (min-width:1025px){
+  body section{
+    padding: 8% 15%;
+  }
+
+  body header{
+    padding: 2% 15%;
+  }
+
+  body header img.logo{
+    width:76px;
+  }
+
+  /* header */
+  body header{
+    align-items: center;
+  }
+
+  header .hamburger-menu{
+    display: none;
+  }
+  
+  header nav.d-flex {
+    display: block;
+  }
+
+  /* strategic planning */
+
+  section.strategic.purple-stripe.d-flex{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  section.strategic.purple-stripe.d-flex .col:first-child{
+    margin-right:10%;
+    width:55%;
+  }
+
+  section.strategic.purple-stripe.d-flex .col:last-child{
+    margin:0;
+    width:45%;}
+  
+    /* benefits */
+
+    body section.benefits .advantages .box{
+      width:32%;
+    }
 }

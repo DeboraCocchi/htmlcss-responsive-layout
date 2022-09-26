@@ -12,7 +12,7 @@ body{
 }
 
 section{
-  padding:30px;
+  padding:40px 30px;
 }
 
 ul{
@@ -27,6 +27,14 @@ a:not(footer a){
   text-decoration: none;
 }
 
+a:hover:not(.btn a){
+  text-decoration: underline;
+}
+
+.btn:hover{
+  opacity: 0.6;
+}
+
 img{
   max-width: 100%;
 }
@@ -39,10 +47,11 @@ img{
 
 .btn{
   border-radius:35px;
-  padding:15px 30px;
+  padding:10px 30px;
   display: inline-block;
   margin:1rem 0;
   text-align: center;
+  width:fit-content;
 
 }
 
@@ -79,6 +88,7 @@ img{
   color:white;
 }
 
+
 .white{
   background-color:white;
   color:black;
@@ -105,15 +115,24 @@ header img.logo{
   height: auto;
 }
 
-header nav i.fa-bars{
+header .hamburger-menu{
   display:inline-block;
   color: white;
   font-size: 2rem;
 }
 
-ul.wide-menu{
+header nav.d-flex{
   font-size: 0.8;
   display: none;
+  align-items: center;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a{
+  color:white;
 }
 
 /* MAIN */
@@ -121,7 +140,7 @@ ul.wide-menu{
 .demo-services{
   background-color: white;
   padding-top: 50px;
-  padding-bottom:80px;
+  padding-bottom:70px;
 }
 
 .top.row, .bottom.row{
@@ -150,9 +169,20 @@ ul.wide-menu{
   flex-direction: column;
 }
 
+.strategic .col img{
+  margin-bottom:15px;
+}
+
 .purple-stripe div.text-block{
   text-align: left;
   line-height: 30px;
+  margin-bottom:15px;
+}
+
+.strategic .col .white.box h4{
+  color: rgb(148,144,224);
+  font-size:1.5rem;
+  margin-bottom: 15px;
 }
 
 .purple-stripe .arrow{
@@ -162,6 +192,15 @@ ul.wide-menu{
   font-size:1.5rem;
   font-weight: 300;
   border-radius: 50%;
+  display: inline-block;
+  margin-top:20px;
+}
+
+
+.purple.arrow a{
+  color:black;
+  position:relative;
+  top:25%;
 }
 
 /* testimonials */
@@ -169,6 +208,10 @@ ul.wide-menu{
 .testimonials{
   text-align: center;
   line-height: 30px;
+}
+
+.testimonials >p{
+  margin-bottom: 15px;
 }
 
 .testimonials .box{
@@ -179,6 +222,7 @@ ul.wide-menu{
   color: rgb(148,144,224);
   font-weight: bold;
   font-size:2rem;
+  margin-bottom: 15px;
 }
 
 .testimonials .box i{
@@ -203,15 +247,15 @@ ul.wide-menu{
 }
 
 
-.testimonials .testimonial-image:first-child > div{
+.testimonials .box:nth-of-type(1) .testimonial-image> div{
   background-image: url('../img/testimonial1.jpg');
 }
 
-.testimonials .testimonial-image:nth-of-type(2) > div{
+.testimonials .box:nth-of-type(2) .testimonial-image> div{
   background-image: url('../img/testimonial2.jpg');
 }
 
-.testimonials .testimonial-image:nth-of-type(3){
+.testimonials .box:nth-of-type(3) .testimonial-image> div{
   background-image: url('../img/testimonial3.jpg');
 }
 
@@ -233,8 +277,20 @@ ul.wide-menu{
   margin-bottom: 30px;
 }
 
+.benefits .benefit-number , .benefits h3{
+  color: rgb(148,144,224);
+}
+
+.benefits .benefit-number{
+  font-size:3rem;
+}
+
 .advantages{
   flex-direction: column;
+}
+
+.advantages .box{
+  text-align: left;
 }
 
 
@@ -243,7 +299,6 @@ ul.wide-menu{
 
 section.about-us{
   text-align: left;
-  padding:30px;
   flex-direction: column;
 }
 
@@ -315,7 +370,9 @@ section.get-started .white.btn{
 
 footer{
   background-color: black;
+  padding:10px 20px;
   color:white;
+  text-align: center;
 }
 
 
