@@ -8,6 +8,7 @@
 
 body{
   font-family: 'Rubik', sans-serif;
+  background-color: white;
 }
 
 ul{
@@ -23,15 +24,24 @@ a{
   color:white;
 }
 
+img{
+  max-width: 100%;
+}
+
 /* UTILITIES */
 
 .d-flex{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .btn{
   border-radius:25px;
-  padding:15px 20px;
+  padding:10px 50px;
+  display: inline-block;
+  margin:1rem 0;
+  text-align: center;
+
 }
 
 .box{
@@ -39,8 +49,9 @@ a{
   width:100%;
   text-align: center;
   padding:25px;
-  color:rgb(96,109,126	);
+  color:rgb(96,109,126);
   line-height: 30px;
+  margin-bottom:2rem;
 }
 
 .box h3{
@@ -48,6 +59,27 @@ a{
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
+
+.lightblue{
+  background-color: rgb(192,220,254);
+}
+
+.blue{
+  background-color: rgb(74,131,249);
+  color:white;
+}
+
+.purple{
+  background-color: rgb(148,144,224);
+  color:white;
+}
+
+.white{
+  background-color:white;
+  color:black;
+}
+
+
 
 /* HEADER */
 
@@ -61,7 +93,7 @@ header{
 
 header img.logo{
   width: 76px;
-  height: auto;;
+  height: auto;
 }
 
 header nav i.fa-bars{
@@ -77,22 +109,59 @@ ul.wide-menu{
 
 /* MAIN */
 
-.lightblue{
-  background-color: rgb(192,220,254);
-}
-
-.blue{
-  background-color: rgb(74,131,249);
-}
-.purple{
-  background-color: rgb(148,144,224);
-}
-
 .demo-services{
   flex-direction: column;
   background-color: white;
   padding:50px 30px 80px;
 }
 
+
+
+#first-box{
+  padding-bottom:0;
+  text-align: left;
+}
+
+.icons i{
+  color: rgb(74,131,249);
+  font-size:6rem;
+}
+
+.purple-stripe{
+  background-color: rgb(148,144,224);
+  width:100vw;
+  padding:30px 20px;
+  color:white;
+  justify-content: flex-end;
+}
+
+.purple-stripe div.text-block{
+  text-align: left;
+  line-height: 30px;
+}
+
+.purple-stripe .arrow{
+  color:black;
+  width:3rem;
+  height:3rem;
+  font-size:1.5rem;
+  font-weight: 300;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer{
+  background-color: black;
+  color:white;
+}
 
 
